@@ -12,13 +12,14 @@
            <br /><br />  
            <div class="container">  
                 <h1 align="center">Show JSON Data in Jquery Datatables</h3><br />  
-                <h3 align="center">Employee Database</h3><br />  
+                <h3 align="center">camera_shop</h3><br />  
                 <table id="data-table" class="table table-bordered">  
                      <thead>  
                           <tr>  
-                               <th>Name</th>  
-                               <th>Gender</th>  
-                               <th>Designation</th>  
+                               <th>camera_shop_name</th>  
+                               <th>camera_shop_url</th>  
+                               <th>camera_shop_address</th>  
+                               <th>camera_shop_phone_number</th>
                           </tr>  
                      </thead>  
                 </table>  
@@ -28,11 +29,12 @@
  <script>  
  $(document).ready(function(){  
       $('#data-table').DataTable({  
-           "ajax"     :     "employee_data.json",  
+           "ajax"     :     "siyujson.json",  
            "columns"     :     [  
-                {     "data"     :     "name"     },  
-                {     "data"     :     "gender"},  
-                {     "data"     :     "designation"}  
+                {     "data"     :     "camera_shop_name"     },  
+                {     "data"     :     "camera_shop_url"},  
+                {     "data"     :     "camera_shop_address"} ,
+                {     "data"     :     "camera_shop_phone_number"}  
            ]  
       });  
  });  
